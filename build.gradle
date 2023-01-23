@@ -1,0 +1,59 @@
+plugins {
+    id 'java-library'
+    id 'maven-publish'
+}
+
+ext {
+  pluginVersion = '2.15.6'
+  shadePath = 'io.github.bananapuncher714.cartographer.lib'
+  
+  versions = [
+    nbteditor: "7.18.4",
+  ]
+  libs = [
+    nbteditor: "io.github.bananapuncher714:nbteditor:${versions.nbteditor}",
+  ]
+}
+
+allprojects {
+	group = 'io.github.bananapuncher714'
+	java.sourceCompatibility = JavaVersion.VERSION_1_8
+	
+	repositories {
+		mavenLocal()
+		maven { url = uri('https://repo.maven.apache.org/maven2/') }
+		maven { url = uri('https://jitpack.io') }
+		// codemc
+		maven { url = uri('https://repo.codemc.org/repository/maven-public/') }
+		// nms
+		maven { url = uri('https://repo.codemc.io/repository/nms-local/') }
+		// placeholderapi
+		maven { url = uri('https://repo.extendedclip.com/content/repositories/placeholderapi/') }
+		// spigot
+		maven { url = uri('https://hub.spigotmc.org/nexus/content/repositories/snapshots/') }
+		// enginehub
+        maven { url = uri('https://maven.enginehub.org/repo/') }
+	}
+
+	tasks.withType(JavaCompile) {
+		options.encoding = 'UTF-8'
+	}
+}
+
+group = 'io.github.bananapuncher714'
+version = pluginVersion
+
+
+publishing {
+    repositories {
+        maven {
+		    name = 'aaaaahhhhhhh'
+            url = uri('https://repo.aaaaahhhhhhh.com/releases')
+		}
+	}
+    publications {
+        maven(MavenPublication) {
+            from(components.java)
+        }
+    }
+}

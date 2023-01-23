@@ -1,0 +1,10 @@
+plugins {
+    id 'java-library'
+}
+
+dependencies {
+    implementation libs.nbteditor
+    compileOnly 'org.spigotmc:spigot-api:1.17-R0.1-SNAPSHOT'
+}
+
+description = 'cartographer2_api'

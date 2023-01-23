@@ -1,0 +1,10 @@
+plugins {
+    id 'java-library'
+}
+
+dependencies {
+    compileOnly 'org.spigotmc:spigot:1.13.2-R0.1-SNAPSHOT'
+    compileOnly project(':cartographer2_main')
+}
+
+description = 'cartographer2_v1_13_r2'

@@ -1,0 +1,11 @@
+plugins {
+    id 'java-library'
+    id 'war'
+}
+
+dependencies {
+    compileOnly 'org.spigotmc:spigot:1.14.4-R0.1-SNAPSHOT'
+    providedCompile project(':cartographer2_main')
+}
+
+description = 'cartographer2_v1_14_r1'

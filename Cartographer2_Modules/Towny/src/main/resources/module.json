@@ -1,0 +1,9 @@
+{
+    "name": "Towny",
+	"main": "io.github.bananapuncher714.cartographer.module.towny.TownyModule",
+	"description": "Adds Cartographer2 integration with Towny",
+	"version": "${version}",
+	"author": "BananaPuncher714",
+	"website": "aaaaahhhhhhh.com",
+	"depend": [ "Towny" ]
+}

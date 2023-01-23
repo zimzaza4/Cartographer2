@@ -1,0 +1,26 @@
+plugins {
+    id 'java-library'
+}
+
+dependencies {
+    implementation libs.nbteditor
+    implementation 'org.bstats:bstats-bukkit:2.2.1'
+    compileOnly 'org.spigotmc:spigot-api:1.18.2-R0.1-SNAPSHOT'
+    compileOnly 'me.clip:placeholderapi:2.10.6'
+	// WorldBorder 1.9.0
+	compileOnly fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+description = 'cartographer2_main'
+
+compileJava.dependsOn clean
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+processResources {
+    filesMatching(['plugin.yml']) {
+        expand version: rootProject.ext.pluginVersion
+    }
+}
