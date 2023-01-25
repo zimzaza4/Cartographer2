@@ -1,0 +1,18 @@
+## GriefDefender Module for Cartographer 2
+
+# Colors for claims
+colors:
+
+  # what color show to public default
+  # default: #a2c4c9(medium light shade of cyan)
+  public: "#a2c4c9"
+  # The color of claims that are owned by the player
+  # Default: #ff0000(Red)
+  owner: "#ff0000"
+  # The colors of each claim, depending on what trust are set for the player
+  # #e6b8af(Orange) | #6aa84f(Green) | #8e7cc3(purpler) | #274e13(dark green)
+  accessor: "#e6b8af"
+  resident: "#6aa84f"
+  container: "#8e7cc3"
+  builder: "#274e13"
+  manager: "#ff0000"
