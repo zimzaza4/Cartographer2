@@ -1,0 +1,9 @@
+{
+	"name": "GriefDefender",
+	"main": "io.github.bananapuncher714.cartographer.module.griefdefender.GriefDefenderModule",
+	"description": "Adds Cartographer2 integration with GriefDefender",
+	"version": "${version}",
+	"author": "BananaPuncher714",
+	"website": "aaaaahhhhhhh.com",
+	"depend": [ "GriefDefender" ]
+}

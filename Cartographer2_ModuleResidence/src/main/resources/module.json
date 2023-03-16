@@ -1,9 +1,0 @@
-{
-    "name": "Residence",
-	"main": "io.github.bananapuncher714.cartographer.module.residence.ResidenceModule",
-	"description": "Adds Cartographer2 integration with Residence",
-	"version": "1.0.1",
-	"author": "BananaPuncher714",
-	"website": "aaaaahhhhhhh.com",
-	"depend": [ "Residence" ]
-}

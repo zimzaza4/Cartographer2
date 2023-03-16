@@ -1,0 +1,38 @@
+plugins {
+    id 'java-library'
+}
+
+dependencies {
+    compileOnly 'org.spigotmc:spigot-api:1.8.8-R0.1-SNAPSHOT'
+    compileOnly project(':cartographer2_api')
+}
+
+description = 'cartographer2_moduleworldviewer'
+def moduleVersion = '1.0.5'
+version = moduleVersion
+
+
+processResources {
+    filesMatching(['module.json']) {
+        expand version: moduleVersion
+    }
+}
+
+tasks.withType(Jar) {
+    destinationDirectory = file("$rootDir/Cartographer2/Addons")
+}
+
+jar {
+    archiveBaseName = 'WorldViewer-Addon'
+	version = moduleVersion
+	manifest {
+        attributes(
+                'Version': moduleVersion,
+                'Created-By': "Gradle ${gradle.gradleVersion}",
+                'Build-Jdk': "${System.properties['java.version']} " +
+                        "(${System.properties['java.vendor']} ${System.properties['java.vm.version']})",
+                'Build-OS': "${System.properties['os.name']} ${System.properties['os.arch']} " +
+                        "${System.properties['os.version']}"
+        )
+    }
+}
