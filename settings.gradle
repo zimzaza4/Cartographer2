@@ -28,6 +28,7 @@ include(':cartographer2_v1_18_r1')
 include(':cartographer2_v1_18_r2')
 include(':cartographer2_v1_19_r1')
 include(':cartographer2_v1_19_r2')
+include(':cartographer2_v1_19_r3')
 
 // Modules
 
@@ -88,7 +89,7 @@ project(":cartographer2_v1_18_r1").projectDir = file('Cartographer2_NMS/v1_18_R1
 project(":cartographer2_v1_18_r2").projectDir = file('Cartographer2_NMS/v1_18_R2')
 project(":cartographer2_v1_19_r1").projectDir = file('Cartographer2_NMS/v1_19_R1')
 project(":cartographer2_v1_19_r2").projectDir = file('Cartographer2_NMS/v1_19_R2')
-
+project(':cartographer2_v1_19_r3').projectDir = file('Cartographer2_NMS/v1_19_R3')
 
 
 
